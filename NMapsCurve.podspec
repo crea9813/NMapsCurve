@@ -24,7 +24,7 @@ TODO: Add long description of the pod here.
 
   s.homepage         = 'https://github.com/crea9813/NMapsCurve'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.license          = { :type => 'Apache 2.0', :file => 'LICENSE' }
   s.author           = { 'Yang' => '38071744+crea9813@users.noreply.github.com' }
   s.source           = { :git => 'https://github.com/crea9813/NMapsCurve.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
