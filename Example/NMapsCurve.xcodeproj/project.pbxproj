@@ -30,7 +30,13 @@
 /* Begin PBXFileReference section */
 		174CBA223642DDEDCA9778B2 /* Pods-NMapsCurve_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NMapsCurve_Tests.debug.xcconfig"; path = "Target Support Files/Pods-NMapsCurve_Tests/Pods-NMapsCurve_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		182B552B2FFE0FA177A82BB7 /* Pods-NMapsCurve_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NMapsCurve_Tests.release.xcconfig"; path = "Target Support Files/Pods-NMapsCurve_Tests/Pods-NMapsCurve_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		2D24E5442811CE8AB8DB953C /* NMapsCurve.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = NMapsCurve.podspec; path = ../NMapsCurve.podspec; sourceTree = "<group>"; };
+		2D24E5442811CE8AB8DB953C /* NMapsCurve.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = NMapsCurve.podspec; path = ../NMapsCurve.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2FBD4A9A2974E75C00E5A915 /* Math.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
+		2FBD4A9C2974E75C00E5A915 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		2FBD4A9D2974E75C00E5A915 /* LatLngRadians.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatLngRadians.swift; sourceTree = "<group>"; };
+		2FBD4A9E2974E75C00E5A915 /* NMapsCurvePath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NMapsCurvePath.swift; sourceTree = "<group>"; };
+		2FBD4AA02974E75C00E5A915 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		2FBD4AA12974E75C00E5A915 /* NMGLatLng+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NMGLatLng+Extension.swift"; sourceTree = "<group>"; };
 		5A2FB577A9E120970B2C19F4 /* Pods-NMapsCurve_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NMapsCurve_Example.debug.xcconfig"; path = "Target Support Files/Pods-NMapsCurve_Example/Pods-NMapsCurve_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* NMapsCurve_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NMapsCurve_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -43,10 +49,10 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		887E1FF3123142E4F82E85E3 /* Pods_NMapsCurve_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NMapsCurve_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8E1B2EE68647A3CB0B3FC584 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		8E1B2EE68647A3CB0B3FC584 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		92F1FE6BB3B3D8B7AEE8F611 /* Pods-NMapsCurve_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NMapsCurve_Example.release.xcconfig"; path = "Target Support Files/Pods-NMapsCurve_Example/Pods-NMapsCurve_Example.release.xcconfig"; sourceTree = "<group>"; };
 		AF9AC9F4D9EB9FF3738D2586 /* Pods_NMapsCurve_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NMapsCurve_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F6FC65EE67D8C2228780117D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		F6FC65EE67D8C2228780117D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +75,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2FBD4A992974E75C00E5A915 /* NMapsCurve */ = {
+			isa = PBXGroup;
+			children = (
+				2FBD4A9A2974E75C00E5A915 /* Math.swift */,
+				2FBD4A9B2974E75C00E5A915 /* Classes */,
+				2FBD4A9D2974E75C00E5A915 /* LatLngRadians.swift */,
+				2FBD4A9E2974E75C00E5A915 /* NMapsCurvePath.swift */,
+				2FBD4A9F2974E75C00E5A915 /* Assets */,
+				2FBD4AA12974E75C00E5A915 /* NMGLatLng+Extension.swift */,
+			);
+			name = NMapsCurve;
+			path = ../NMapsCurve;
+			sourceTree = "<group>";
+		};
+		2FBD4A9B2974E75C00E5A915 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2FBD4A9C2974E75C00E5A915 /* .gitkeep */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		2FBD4A9F2974E75C00E5A915 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				2FBD4AA02974E75C00E5A915 /* .gitkeep */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +178,7 @@
 		72BA91B424709AC49F9E06C3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2FBD4A992974E75C00E5A915 /* NMapsCurve */,
 				AF9AC9F4D9EB9FF3738D2586 /* Pods_NMapsCurve_Example.framework */,
 				887E1FF3123142E4F82E85E3 /* Pods_NMapsCurve_Tests.framework */,
 			);
@@ -156,7 +193,6 @@
 				174CBA223642DDEDCA9778B2 /* Pods-NMapsCurve_Tests.debug.xcconfig */,
 				182B552B2FFE0FA177A82BB7 /* Pods-NMapsCurve_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -213,10 +249,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = BZSC89933R;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = BZSC89933R;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -227,6 +265,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -314,10 +353,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-NMapsCurve_Example/Pods-NMapsCurve_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/NMapsCurve/NMapsCurve.framework",
+				"${PODS_ROOT}/NMapsMap/framework/NMapsMap.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NMapsCurve.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NMapsMap.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -478,7 +519,9 @@
 			baseConfigurationReference = 5A2FB577A9E120970B2C19F4 /* Pods-NMapsCurve_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BZSC89933R;
 				INFOPLIST_FILE = NMapsCurve/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -493,7 +536,9 @@
 			baseConfigurationReference = 92F1FE6BB3B3D8B7AEE8F611 /* Pods-NMapsCurve_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BZSC89933R;
 				INFOPLIST_FILE = NMapsCurve/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -507,6 +552,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 174CBA223642DDEDCA9778B2 /* Pods-NMapsCurve_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = BZSC89933R;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -516,6 +562,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -529,11 +576,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 182B552B2FFE0FA177A82BB7 /* Pods-NMapsCurve_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = BZSC89933R;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";

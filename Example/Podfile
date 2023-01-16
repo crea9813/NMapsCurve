@@ -4,7 +4,9 @@ platform :ios, '10.0'
 
 target 'NMapsCurve_Example' do
   pod 'NMapsCurve', :path => '../'
-
+  
+  pod 'NMapsMap', '3.10.0'
+  
   target 'NMapsCurve_Tests' do
     inherit! :search_paths
 

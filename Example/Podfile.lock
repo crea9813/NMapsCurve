@@ -1,0 +1,24 @@
+PODS:
+  - NMapsCurve (0.1.0):
+    - NMapsMap (= 3.10.0)
+  - NMapsMap (3.10.0)
+
+DEPENDENCIES:
+  - NMapsCurve (from `../`)
+  - NMapsMap (= 3.10.0)
+
+SPEC REPOS:
+  trunk:
+    - NMapsMap
+
+EXTERNAL SOURCES:
+  NMapsCurve:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  NMapsCurve: c413dd26beaf41b428e3d26c165ee0eb340bba53
+  NMapsMap: 17caab4af9a3fc5c25b79858de18bdeab1eaff87
+
+PODFILE CHECKSUM: 409fae65527367241bcc7cec113094f5f7fdddc4
+
+COCOAPODS: 1.11.2
